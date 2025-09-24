@@ -1,6 +1,6 @@
 local map_manager = {}
 
-local collision = require("libraries/collision")
+local collision = require("libraries.collision")
 local tile_img = lg.newImage('/assets/sprites/tile.png')
 local box_img = lg.newImage('/assets/sprites/box.png')
 local rock_img = lg.newImage('/assets/sprites/rock.png')
@@ -27,6 +27,7 @@ function map_manager.init()
 		table.insert (tiles, tile)
     end
 end
+
 
 function map_manager.generate_tiles()
 	rnd = math.random(40) --generate a number from 1 to 30
@@ -92,6 +93,7 @@ function map_manager.generate_tiles()
     table.insert(tiles, tile)
 end
 
+
 function map_manager.update_tiles(dt)
     for _, t in ipairs(tiles) do
         t.x = t.x - tile_speed * dt
@@ -107,6 +109,7 @@ function map_manager.update_tiles(dt)
     end
 end
 
+
 function map_manager.draw_tiles()
     for _, t in ipairs(tiles) do
 		lg.draw(tile_img, t.x, t.y)
@@ -119,6 +122,7 @@ function map_manager.draw_tiles()
 		lg.draw(food_img, f.x, f.y)
     end
 end
+
 
 function map_manager.destroy_tiles()
     for t = #tiles, 1, -1 do

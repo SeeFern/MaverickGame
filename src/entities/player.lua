@@ -1,5 +1,5 @@
 require("src.map")
-local collision = require("libraries/collision")
+local collision = require("libraries.collision")
 
 local sprites = {}
 	sprites.playerSheet = lg.newImage('assets/sprites/playerSheet.png')
@@ -16,7 +16,6 @@ local animations = {}
 	animations.smash = anim8.newAnimation(grid('2-2', 4), 1.0)
 
 local min_grav = 400
-
 
 player = {}
 	player.x = 18

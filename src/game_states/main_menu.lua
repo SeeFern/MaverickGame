@@ -26,7 +26,6 @@ chelsea = {}
 local last_score = 0
 local print_score = false
 
-
 local M = {
 
 	init = function()
@@ -87,17 +86,20 @@ local M = {
 		end
 	end,
 
+
 	gamepadpressed = function(button)
 		if button == 'a' then
 			switchState("game_play")
 		end
 	end,
 
+
 	mousepressed = function(x, y, button)
 		if button == 1 then
 			switchState("game_play")
 		end
 	end,
+
 
 	signal.register("print score", function(score)
 		print_score = true

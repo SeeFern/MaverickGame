@@ -27,14 +27,17 @@ long_line_behaviour=1
 long_line_column=80
 
 [files]
-current_page=6
-FILE_NAME_0=0;Lua;0;EUTF-8;1;1;0;%2Fhome%2Fferns%2FProjects%2FMaverickGame%2Fmain.lua;0;4
-FILE_NAME_1=8731;Lua;0;EUTF-8;1;1;0;%2Fhome%2Fferns%2FDownloads%2FMaverickGameLutro%2Fmain.lua;0;4
-FILE_NAME_2=0;Lua;0;EUTF-8;1;1;0;%2Fhome%2Fferns%2FDownloads%2FMaverickGameLutro%2Fsignal.lua;0;4
-FILE_NAME_3=0;Lua;0;EUTF-8;1;1;0;%2Fhome%2Fferns%2FDownloads%2FMaverickGameLutro%2Fplayer.lua;0;4
-FILE_NAME_4=0;Lua;0;EUTF-8;1;1;0;%2Fhome%2Fferns%2FDownloads%2FMaverickGameLutro%2Fcollision.lua;0;4
-FILE_NAME_5=0;Lua;0;EUTF-8;1;1;0;%2Fhome%2Fferns%2FDownloads%2FMaverickGameLutro%2Fgame.lua;0;4
-FILE_NAME_6=84;Lua;0;EUTF-8;1;1;0;%2Fhome%2Fferns%2FDownloads%2FMaverickGameLutro%2Fmain_menu.lua;0;4
+current_page=3
+FILE_NAME_0=639;Lua;0;EUTF-8;1;1;0;%2Fhome%2Fferns%2FProjects%2FMaverickGame%2Fmain.lua;0;4
+FILE_NAME_1=2128;Lua;0;EUTF-8;1;1;0;%2Fhome%2Fferns%2FProjects%2FMaverickGame%2Fsrc%2Fgame_states%2Fgame.lua;0;4
+FILE_NAME_2=2658;Lua;0;EUTF-8;1;1;0;%2Fhome%2Fferns%2FProjects%2FMaverickGame%2Fsrc%2Fgame_states%2Fmain_menu.lua;0;4
+FILE_NAME_3=2505;Lua;0;EUTF-8;1;1;0;%2Fhome%2Fferns%2FProjects%2FMaverickGame%2Fsrc%2Fmap.lua;0;4
+FILE_NAME_4=0;Lua;0;EUTF-8;1;1;0;%2Fhome%2Fferns%2FProjects%2FMaverickGame%2Fglobals.lua;0;4
+FILE_NAME_5=282;Lua;0;EUTF-8;1;1;0;%2Fhome%2Fferns%2FProjects%2FMaverickGame%2Fconf.lua;0;4
+FILE_NAME_6=2423;Lua;0;EUTF-8;1;1;0;%2Fhome%2Fferns%2FProjects%2FMaverickGame%2Fsrc%2Feffects.lua;0;4
+FILE_NAME_7=625;Lua;0;EUTF-8;1;1;0;%2Fhome%2Fferns%2FProjects%2FMaverickGame%2Fsrc%2Fentities%2Fplayer.lua;0;4
+FILE_NAME_8=972;Lua;0;EUTF-8;1;1;0;%2Fhome%2Fferns%2FProjects%2FMaverickGame%2Flibraries%2Fcollision.lua;0;4
+FILE_NAME_9=840;Markdown;0;EUTF-8;1;1;0;%2Fhome%2Fferns%2FProjects%2FMaverickGame%2FREADME.md;0;4
 
 [VTE]
 last_dir=/home/ferns/Projects/MaverickGame

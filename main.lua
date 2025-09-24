@@ -1,10 +1,13 @@
-jit.off()
+--no jit (hurts performance but more stable)
+require("jit").off()
+
+--pull in deps
+signal = require 'libraries.hump.signal'
+anim8 = require 'libraries.anim8.anim8'
 require("globals")
 require("src.effects")
 
-signal = require 'libraries/hump/signal'
-anim8 = require 'libraries/anim8/anim8'
-
+--setup states
 local main_menu = require("src.game_states.main_menu")
 local game = require("src.game_states.game")
 local states = {}
@@ -12,6 +15,7 @@ local states = {}
 local sfx = {}
 	sfx.controls_inv = la.newSource('assets/sfx/controls_inv.wav', 'static')
 
+color_modulation = {r = 1, g = 1, b = 1}
 curr_state = nil
 game_started = false
 canvas_flipped = false
@@ -30,6 +34,7 @@ function switchState(state_name)
 		curr_state.init()
 	end
 end
+
 
 function love.load()
 	math.randomseed(os.time())
@@ -58,6 +63,7 @@ function love.load()
 
 	switchState('main_menu')
 end
+
 
 function love.update(dt)
 	if curr_state and curr_state.update then
@@ -92,8 +98,9 @@ function love.update(dt)
 	end
 end
 
+
 function love.draw()
-    love.graphics.setColor(color_modulation.r, color_modulation.g, color_modulation.b)
+    lg.setColor(color_modulation.r, color_modulation.g, color_modulation.b)
 
     lg.setCanvas(gameCanvas)
     lg.setFont(game_font)
@@ -123,9 +130,8 @@ function love.draw()
         curr_state.ui()
     end
 
-    love.graphics.setColor(1, 1, 1)
+    lg.setColor(1, 1, 1)
 end
-
 
 
 function love.keypressed(key)
@@ -134,21 +140,16 @@ function love.keypressed(key)
 	end
 end
 
+
 function love.gamepadpressed(joystick, button)
 	if curr_state and curr_state.gamepadpressed then
 		curr_state.gamepadpressed(button)
 	end
 end
 
+
 function love.mousepressed(x, y, button)
 	if curr_state and curr_state.mousepressed then
 		curr_state.mousepressed(x, y, button)
 	end
 end
-
---TODO: end screen for when you lose
---TODO: any other polish like fixing art for hearts.
---TODO: add touchscreen controls
---TODO: try to get an android build out as well.
---TODO: get web build working
---TODO: write up instructions for playing on muOS with included files

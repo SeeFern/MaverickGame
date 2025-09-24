@@ -7,7 +7,6 @@ local effect_sounds = {}
 
 local color_timer = 0
 local color_effect_active = false
-color_modulation = {r = 1, g = 1, b = 1}
 local target_modulation = {r = 1, g = 1, b = 1}
 local shift_interval = 0.1
 local shift_timer = 0
@@ -22,6 +21,12 @@ local function random_color()
 end
 
 
+local function reset_color()
+	color_effect_active = false
+	color_modulation = {r = 1, g = 1, b = 1}
+end
+
+
 local function invert_controls(duration)
 	pcall(function()
 		pcall(function() effect_sounds.controls_inv:stop() end)
@@ -32,6 +37,7 @@ local function invert_controls(duration)
 		invert_timer = duration
     end)
 end
+
 
 local function flip_canvas(duration)
 	pcall(function()
@@ -44,6 +50,7 @@ local function flip_canvas(duration)
 	end)
 end
 
+
 local function spin_canvas(duration)
 	pcall(function()
 		pcall(function() effect_sounds.spin:stop() end)
@@ -54,6 +61,7 @@ local function spin_canvas(duration)
 		spin_timer = duration
 	end)
 end
+
 
 local function speed_up()
 	signal.emit("speed up")
@@ -108,8 +116,13 @@ function update_effects(dt)
 		color_modulation.b = color_modulation.b + (target_modulation.b - color_modulation.b) * lerp_speed
 
 		if color_timer <= 0 then
-			color_effect_active = false
-			color_modulation = {r = 1, g = 1, b = 1}
+			reset_color()
 		end
 	end
 end
+
+
+signal.register("end color timer", function()
+    color_timer = 0
+    reset_color()
+end)

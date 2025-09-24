@@ -1,3 +1,4 @@
+--shorthands
 la = love.audio
 ld = love.data
 le = love.event
