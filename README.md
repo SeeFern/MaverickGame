@@ -19,17 +19,27 @@ Other ports found at: https://seefern.itch.io/run-maverick-run
 
 ## Credits
 
-Art:
+**Art:**
+
 https://opengameart.org/content/a-platformer-in-the-forest
+
 https://opengameart.org/content/dog-spritesheets
+
 https://henrysoftware.itch.io/pixel-food
+
 https://opengameart.org/content/bushly-and-princess-sera
 
-Sounds:
+
+**Sounds:**
+
 https://opengameart.org/content/gravity-inverter
+
 https://opengameart.org/content/platformer-jumping-sounds
+
 https://opengameart.org/content/512-sound-effects-8-bit-style
+
 https://opengameart.org/content/8-bit-music-pack-loopable
 
-Font:
+**Font:**
+
 https://www.1001fonts.com/pixelpurl-font.html
