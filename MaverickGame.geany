@@ -20,14 +20,21 @@ indent_mode=2
 [project]
 name=MaverickGame
 base_path=/home/ferns/Projects/MaverickGame
+description=
 
 [long line marker]
 long_line_behaviour=1
 long_line_column=80
 
 [files]
-current_page=0
-FILE_NAME_0=2284;Lua;0;EUTF-8;1;1;0;%2Fhome%2Fferns%2FProjects%2FMaverickGame%2Fmain.lua;0;4
+current_page=6
+FILE_NAME_0=0;Lua;0;EUTF-8;1;1;0;%2Fhome%2Fferns%2FProjects%2FMaverickGame%2Fmain.lua;0;4
+FILE_NAME_1=8731;Lua;0;EUTF-8;1;1;0;%2Fhome%2Fferns%2FDownloads%2FMaverickGameLutro%2Fmain.lua;0;4
+FILE_NAME_2=0;Lua;0;EUTF-8;1;1;0;%2Fhome%2Fferns%2FDownloads%2FMaverickGameLutro%2Fsignal.lua;0;4
+FILE_NAME_3=0;Lua;0;EUTF-8;1;1;0;%2Fhome%2Fferns%2FDownloads%2FMaverickGameLutro%2Fplayer.lua;0;4
+FILE_NAME_4=0;Lua;0;EUTF-8;1;1;0;%2Fhome%2Fferns%2FDownloads%2FMaverickGameLutro%2Fcollision.lua;0;4
+FILE_NAME_5=0;Lua;0;EUTF-8;1;1;0;%2Fhome%2Fferns%2FDownloads%2FMaverickGameLutro%2Fgame.lua;0;4
+FILE_NAME_6=84;Lua;0;EUTF-8;1;1;0;%2Fhome%2Fferns%2FDownloads%2FMaverickGameLutro%2Fmain_menu.lua;0;4
 
 [VTE]
-last_dir=/home/ferns
+last_dir=/home/ferns/Projects/MaverickGame

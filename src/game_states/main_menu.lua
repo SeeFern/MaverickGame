@@ -68,15 +68,15 @@ local M = {
 		lg.clear(0,0,0)
 		love.graphics.setColor(1, 1, 1)
 		lg.draw(img.bg,0 ,0)
-		player.animation:draw(bigSprites.bigPlayerSheet, 75, 88, nil, 1*player.direction, player.yscale, 8,8)
-		chelsea.animation:draw(bigSprites.bigChelsSheet, 95, 74, nil, -1, 1)
+		player.animation:draw(bigSprites.bigPlayerSheet, 75, 76, nil, 1*player.direction, player.yscale, 8,8)
+		chelsea.animation:draw(bigSprites.bigChelsSheet, 95, 62, nil, -1, 1)
 	end,
 
 
 	ui = function()
 		lg.printf("Run Maverick, Run!", 0, 105, lg.getWidth(), "center")
-		lg.printf("A to start", 0, 427, lg.getWidth(), "center")
-		if print_score then lg.printf("Final Score: "..math.floor(last_score), 0, 512, lg.getWidth(), "center") end
+		lg.printf("A to start", 0, 379, lg.getWidth(), "center")
+		if print_score then lg.printf("Final Score: "..math.floor(last_score), 0, 200, lg.getWidth(), "center") end
 	end,
 
 
